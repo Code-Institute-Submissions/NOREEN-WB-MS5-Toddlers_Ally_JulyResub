@@ -33,9 +33,10 @@
                 Health & Skin Care
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Soaps &amp; Shampoos</a>
-                <a href="" class="dropdown-item">Oil &amp; Lotion &amp; Powder</a>
-                <a href="" class="dropdown-item">All Homeware</a>
+                <a href="{% url 'products' %}?category=soap,shampoo" class="dropdown-item">Soaps &amp; Shampoos</a>
+                <a href="{% url 'products' %}?category=oil,lotion,powder" class="dropdown-item">Oil &amp; Lotion &amp; Powder</a>
+                <a href="{% url 'products' %}?category=hand_sanitizer" class="dropdown-item">Hand Sanitizers</a>
+                <a href="{% url 'products' %}?category=baby_wipes" class="dropdown-item">Baby Wipes</a>
             </div>
         </li>
 
