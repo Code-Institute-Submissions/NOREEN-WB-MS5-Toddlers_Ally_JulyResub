@@ -1,0 +1,1 @@
+web: gunicorn toddlers_ally.wsgi:application
