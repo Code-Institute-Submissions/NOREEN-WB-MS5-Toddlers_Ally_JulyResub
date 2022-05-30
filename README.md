@@ -83,9 +83,6 @@ For everyday usage of Gitpod, it doesn’t have any effect at all. The script on
 - An ID that is randomly generated each time the workspace is started.
 - The current date and time
 - The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
 **So….?**
 
 We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
