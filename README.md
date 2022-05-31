@@ -548,3 +548,51 @@ TEST            | OUTCOME                          | PASS / FAIL
 Responsiveness | Check every element on the page for consistent scalability in mobile, tablet and desktop view.| PASS
 Adding a product | When filling out the form to add a new product, the product is added to the relevant category and is searchable via the search bar. | PASS
 Uploading an image | When uploading an image to a new product, the site shows the name of the file that will be uploaded. When checking the product details page, the image also shows. | PASS
+
+# 6. Deployment
+[Go to the top](#table-of-contents)
+
+I used the terminal to deploy my project locally. To do this I had to:
+
+1. Create a repository on GitHub.
+2. Clone the repository on your chosen source code edito using the clone link.
+3. Enter "python3 manage.py runserver into the terminal.
+4. Go to localhost address on my web browser.
+5. All locally saved changes will show up here.
+
+For the final deployment to Heroku, I had to:
+
+1. Create Heroku App
+2. Install dj_database_url and psycopg2-binary in my local environment
+3. Freeze requirements.txt file
+4. In settings.py import dj_database_url
+5. Back up the local database using "./manage.py dumpdata --exclude auth.permission --exclude contenttypes > db.json" in the terminal window.
+6. Comment out the local default database
+7. Add the Heroku database url via dj_database_url.parse()
+8. Run migrations to the Postgres database
+9. Restore the database using this command "./manage.py loaddata db.json" in the terminal windows.
+10. Create a SuperUser for the Postgres database
+11. Configure the database so that when the app is running on Heroku it uses the Postgres database and when it's running locally it uses the SQLite database
+12. Create Procfile so that Heroku creates a web dyno so that it will run gunicorn and serve the Django app
+13. Disable Heroku collect static
+14. Add the Heroku hostname to allowed hosts in settings.py
+15. Generate a new Django secret key and add this to the Heroku config variables
+16. Replace the secret key in settings.py to grab it from the environment
+17. Set debug to True only if the environment is a development environment
+18. Commit changes and deploy to GitHub and Heroku
+19. Create an AWS account
+20. Create an S3 bucket
+21. Configure the S3 bucket settings and policies
+22. Create and configure the IAM service
+23. In the terminal install Boto3 and Django-storages
+24. Freeze requirements.txt file
+25. Add a statement to the AWS bucket if the environment is "USE_AWS"
+26. Add AWS keys to the Heroku config variables
+27. Create custom storage classes for media and static files
+28. In settings.py add a statement to use the static and media storage class and locations
+29. Commit and push to GitHub and Heroku
+30. In the S3 bucket create a new folder for media
+31. Upload all used images to the media file in the S3 bucket
+32. Add the Stripe keys to the Heroku config variables
+33. Create a new webhook endpoint from the Stripe dashboard
+34. Add all the Stripe keys to the Heroku config variables
