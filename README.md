@@ -86,7 +86,8 @@ The admin of the website will also have the ability to use all CRUD functionalit
  * As a returning visitor, I want to easily log in or logout so that I can access my personal account information.
  * As a returning visitor, I want to easily register for an account so that I can have a personal account and be able to view my profile.
 
- User Expectations:
+ <a name="user-expectation"></a>
+  ### User Expectations:
  The website should have a simple user interface, with the navigation to each section clear and concise.
 
  * The menu is clear to read.
@@ -95,3 +96,58 @@ The admin of the website will also have the ability to use all CRUD functionalit
  * To be able to see a clear selection of products.
  * Easily view the total of the basket before making any payment.
  * The website provides responsive feedback for any actions, for example when adding a product to the basket.
+
+ <a name="user-stories"></a>
+ ### User Stories
+
+ Throughout the project, I used the GitHub projects board to log all user stories as my project management tool. This helped me keep the focus on the necessary tasks as I would move them to the "in progress lane" as I'm working on the story. I would then move them to the "done" lane once the story has been completed. I would add new user stories during the project to keep track of the tasks that had to be done.
+
+ ![User Stories Issuess](media/issuuess.JPG)
+
+ <a name="skeleton"></a>
+ # 1.2. Skeleton
+  [Go to top](#table-of-contents)
+
+  ### Wireframes
+
+  ### Home
+  ![Desktop Version](documentation/wireframes/wire-home.JPG)
+
+  ### All Products
+  ![Desktop Version](documentation/wireframes/wire-products.JPG)
+
+  ### Product Details
+  ![Desktop Version](documentation/wireframes/wire-product-detail.JPG)
+
+  ### Bag
+  ![Desktop Version](documentation/wireframes/wire-bag.JPG)
+
+  ### Checkpout
+  ![Desktop Version](documentation/wireframes/wire-checkout.JPG)
+
+  ### Sign Up
+  ![Desktop Version](documentation/wireframes/wire-signup.JPG)
+
+  ### Sign In
+  ![Desktop Version](documentation/wireframes/wire-signin.JPG)
+
+  ### Reset Password
+  ![Desktop Version](documentation/wireframes/wire-resetpass.JPG)
+
+  ### change Password
+  ![Desktop Version](documentation/wireframes/wire-changepass.JPG)
+
+  ### Mobile Home
+  ![Desktop Version](documentation/wireframes/wire-mobilehome.JPG)
+
+  ### Mobile Product
+  ![Desktop Version](documentation/wireframes/wire-mobileproducts.JPG)
+
+  ### Mobile Product Detail
+  ![Desktop Version](documentation/wireframes/wire-mobileproductdetail.JPG)
+
+  ### Mobile SignIn
+  ![Desktop Version](documentation/wireframes/wire-mobilesignin.JPG)
+
+  ### Mobile Signup
+  ![Desktop Version](documentation/wireframes/wire-mobilesignup.JPG)
