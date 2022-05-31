@@ -20,7 +20,6 @@ The admin of the website will also have the ability to use all CRUD functionalit
         - [User Stories](#user-stories)
   - [1.2. Skeleton](#skeleton)
   - [1.3. Structure](#structure)
-  - [1.3. Surface](#surface)
 
  [2. Features](#features)
 
@@ -138,19 +137,19 @@ The admin of the website will also have the ability to use all CRUD functionalit
   ![Desktop Version](documentation/wireframes/wire-changepass.JPG)
 
   ### Mobile Home
-  ![Desktop Version](documentation/wireframes/wire-mobilehome.JPG)
+  ![Mobile Version](documentation/wireframes/wire-mobilehome.JPG)
 
   ### Mobile Product
-  ![Desktop Version](documentation/wireframes/wire-mobileproducts.JPG)
+  ![Mobile Version](documentation/wireframes/wire-mobileproducts.JPG)
 
   ### Mobile Product Detail
-  ![Desktop Version](documentation/wireframes/wire-mobileproductdetail.JPG)
+  ![Mobile Version](documentation/wireframes/wire-mobileproductdetail.JPG)
 
   ### Mobile SignIn
-  ![Desktop Version](documentation/wireframes/wire-mobilesignin.JPG)
+  ![Mobile Version](documentation/wireframes/wire-mobilesignin.JPG)
 
   ### Mobile Signup
-  ![Desktop Version](documentation/wireframes/wire-mobilesignup.JPG)
+  ![Mobile Version](documentation/wireframes/wire-mobilesignup.JPG)
 
   <a name="structure"></a>
  # 1.3. Structure
@@ -309,3 +308,91 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
         UserProfile.objects.create(user=instance)
     instance.userprofile.save()
 ```
+<a name="features"></a>
+# 2. Features
+ [Go to top](#table-of-contents)
+
+ * The navigation bar is placed at the top of all pages. This contains 2 sections that are separated. The first section is  the product search bar, my account icon and the basket icon. The second section contains the main navigation for the products. The navigation bar is dynamic in that meaning depending on if the user is logged in or not the options will change.
+
+ * If the user is not logged in the navigation bar will show user login and signin link:
+ * If the user is logged in the navigation bar will show authenticated roles. Which will Product management, User Profile.
+ 
+ ### Sign Up Page
+ * A simple signup form that requires the user to enter a unique email address and a password. The password must be entered again for confirmation, this must match the already entered password above.
+ 
+ * A message to prompt the user that if an account is already been created they can click the sign-in hyperlink to be redirected to the sign-in page.
+
+ * If the user enters an email address that has already been registered, the user is prompted by an error message.
+
+ ![Desktop Version](documentation/images/signup.JPG)
+
+ * If the user's password does not matches in confirm pass it will not work.
+
+ ![Desktop Version](documentation/images/passdontmatch.JPG)
+
+ ### Sign In Page
+
+ * A login form that requires the user to enter the email address and password that they used when signing up to the site.
+ * The user can only log in once they have activated their account via an email received after signing up.
+ * A message to prompt the user that if an account has not been created they can click the signup hyperlink to be redirected to the signup page.
+ * If the user enters in the wrong credentials, a message is displayed to the user.
+
+ ![Desktop Version](documentation/images/loginerror.JPG)
+
+ * Once the user has successfully logged in, they will be redirected to the home page. A success message will show to confirm the login has been successful.
+
+ ![Desktop Version](documentation/images/homesuccess.JPG)
+
+ 
+ ### Log out Page
+
+ * When clicking logout from the navigation bar, the user is redirected to a sign-out page to confirm their action.
+
+ ### Landing Page
+ * home secreen shows with navigation bar
+
+ * A shop now button that directs the user to the all products page. The user can then easily identify products they would like to purchase and add them to the basket.
+
+ ### Products Page
+ * The user can access the product pages by selecting the category on the navigation bar.
+ * The page displays a count of the search results within the category.
+ * Sort by the filter at the top right of the page, so the user can filter by price, rating, name and category.
+ * Each product has an image, name of product, price, category and rating.
+ * The page also contains a back to top button, which the user can click to go to the top of the page.
+ * As a superuser, the admin can see the edit and delete buttons, allowing quick access to the product admin.
+
+ ### Products Details Page
+
+ * The product details will showcase an image, name of the product, short description, price, weight selector(if the product has different weights), category and rating, quantity selector, keep shopping button and an add to basket button.
+ * As a superuser, the admin can see the edit and delete buttons, allowing quick access to the product admin.
+ * The quantity selector starts at 1. When the quantity is at 1, the minus button is disabled.
+ * When adding a product to the basket, the user will be prompted with a success message confirming the product has been added.
+
+ ![Desktop Version](documentation/images/bagdetail.JPG)
+
+ ### Bag Page
+
+ * This page shows each product as a line item, displaying an image, name of the product, weight, SKU, price per item, the quantity selected, quantity selector to update and a subtotal for each item.
+ * When the quantity selector is at 1, the minus button is disabled.
+ * A pricing summary of the whole basket is also shown with the basket total, delivery fee and total.
+ * If the user has not met the free delivery threshold then an alert message is shown, prompting the user that they can qualify for free delivery if they spend more.
+
+ ![Desktop Version](documentation/images/securecheckout.JPG)
+
+ ### Checkout Page
+ - A checkout form, prompts the user to enter their delivery details with Stripe integration.
+ - A checkbox for the user to confirm if they would like to save their details for next time. This only saves delivery details and not the card details.
+ - A summary of the user's order is also shown, the user can then be sure they are making the correct purchase before continuing with the checkout process.
+ - A message is shown just below the complete order button to warn the user that they will be charged a certain amount on their card.
+
+ ### Checkout Success Page
+ - This page shows a summary of their order, with an order number.
+ - Once the user is on this page, an email will also be triggered to send out an order confirmation email.
+
+ ### My Profile Page
+ - This page shows a form so the user can update their delivery details. Upon completing the form, all delivery details will be updated if the user proceeds to the checkout page again.
+ - Order history is also displayed, where the user can select the order number to view a previous order confirmation summary. An alert will also show prompting the user they are viewing a past order confirmation summary.
+ 
+ ![Desktop Version](documentation/images/profile.JPG)
+
+ 
