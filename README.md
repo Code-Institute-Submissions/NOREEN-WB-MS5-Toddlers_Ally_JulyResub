@@ -38,11 +38,7 @@ The admin of the website will also have the ability to use all CRUD functionalit
 
  [8.Marketing](#marketing)
 
- [9.Social Media](#Socialmedia)
-
- [9.End Product](#endproduct)
-
- [10. Acknowledgement](#acknowledgement)
+ [9. Acknowledgement](#acknowledgement)
 
  <a name="ux"></a>
 # 1. User Expereince (UX) design
@@ -549,6 +545,13 @@ Responsiveness | Check every element on the page for consistent scalability in m
 Adding a product | When filling out the form to add a new product, the product is added to the relevant category and is searchable via the search bar. | PASS
 Uploading an image | When uploading an image to a new product, the site shows the name of the file that will be uploaded. When checking the product details page, the image also shows. | PASS
 
+<a name="bugs"></a>
+# 5. Bugs
+ [Go to top](#table-of-contents)
+
+ * The quantity selector for the products had a bug where the minus button was not disabled on mobile devices. This was rectified with CodeInstitute guidance.
+
+<a name="deployment"></a>
 # 6. Deployment
 [Go to the top](#table-of-contents)
 
@@ -596,3 +599,27 @@ For the final deployment to Heroku, I had to:
 32. Add the Stripe keys to the Heroku config variables
 33. Create a new webhook endpoint from the Stripe dashboard
 34. Add all the Stripe keys to the Heroku config variables
+
+<a name="seo"></a>
+# 7. SEO
+ [Go to top](#table-of-contents)
+
+ <a name="marketing"></a>
+# 8. Marketing
+ [Go to top](#table-of-contents)
+
+ For my marketing strategies, I decided to go with content marketing, Social media and email marketing root. As these are free options and very effective for an E-commerce store.
+
+- Content marketing - Posting content that contains blog posts and video tutorials will be my primary source to display content.
+
+- Social media - Using these platforms will help build and interact with customers to build relationships and loyalty. This also helps build the brand. Followers will help share the business posts and in result gain more traction with other people. The same content can be across all social media platforms.
+
+
+ <a name="acknowledgement"></a>
+# 9 Acknowledgement
+ [Go to top](#table-of-contents)
+
+ ### Project Acknowledgements
+- Code Institue Tutor Support - For directing me to the correct solutions for any bugs.
+
+- My Mentor - For his constructive criticism and always pushing me to go further to develop my skills.
