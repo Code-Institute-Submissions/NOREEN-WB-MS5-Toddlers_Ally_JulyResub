@@ -195,7 +195,7 @@
                         <div class="footer-widget">
                             <div class="footer-logo">
                                 <a href="{% url 'home' %}">
-                                    <h2 class="logo-font text-white my-0"><strong>Boutique</strong> Ado</h2>
+                                    <h2 class="logo-font text-white my-0"><strong>Toddlers</strong> Ally</h2>
                                 </a>
                             </div>
                             <div class="footer-text">
@@ -222,6 +222,7 @@
                                 <li><a href="{% url 'home' %}">Home</a></li>
                                 <li><a href="{% url 'contact' %}">contact</a></li>
                                 <li><a href="{% url 'products' %}">products</a></li>
+                                <li><a href="{% url 'privacy_policy' %}" class="text-white">Privacy Policy</a></li>
                                 {% if user.is_authenticated %}
                                     <li><a href="{% url 'profile' %}">profile</a></li>
                                     <li><a href="{% url 'account_logout' %}">logout</a></li>

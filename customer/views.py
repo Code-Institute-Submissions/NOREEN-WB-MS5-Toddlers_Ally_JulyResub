@@ -24,3 +24,8 @@ def contact(request):
     }
 
     return render(request, 'customer/contact.html', context)
+
+
+def privacy_policy(request):
+    """ A view to handle the privacy policy page """
+    return render(request, 'customer/privacy-policy.html')
