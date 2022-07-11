@@ -603,6 +603,14 @@ For the final deployment to Heroku, I had to:
 <a name="seo"></a>
 # 7. SEO
  [Go to top](#table-of-contents)
+ To improve the search engine optimisation (SEO) of the site I:
+
+- Added keywords in a meta tag to my base.html. The keywords were researched using WordTracker, there are a number of short-tail and long-tail keywords.
+
+-  This is a list of all the keywords I came up with, Bottles, Sterilisers, Nipples, Starter Kits, Soaps, Shampoos, Oil, 
+Lotion, Powder, Hand Senitizers, Baby Wipes.
+
+
 
  <a name="marketing"></a>
 # 8. Marketing
@@ -614,7 +622,13 @@ For the final deployment to Heroku, I had to:
 
 - Social media - Using these platforms will help build and interact with customers to build relationships and loyalty. This also helps build the brand. Followers will help share the business posts and in result gain more traction with other people. The same content can be across all social media platforms.
 
+## Social Media Marketing
+- I'll use the following page on Facebook as the busniess page for my social media busniess strategy.
 
+![Desktop Version](documentation/images/Facebook.JPG)
+
+## Busniess Model
+The Toddler Ally business model is based on a Business to Consumer (B2C) interaction. The Consumer can directly purchase from the  Toddlers Ally  store.  The Toddlers Ally store uses Stripe as payment Method. All of the users hsitory of the products that he purchases is shown on his profile.
  <a name="acknowledgement"></a>
 # 9 Acknowledgement
  [Go to top](#table-of-contents)

@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
-from .views import handler404
+# from .views import handler404, server_not_found
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -31,4 +31,6 @@ urlpatterns = [
     path('customer/', include('customer.urls')),
     path('summernote/', include('django_summernote.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
 handler404 = 'toddlers_ally.views.handler404'
+handler500 = 'toddlers_ally.views.server_not_found'
